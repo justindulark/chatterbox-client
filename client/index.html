@@ -7,6 +7,8 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
       if (!/(&|\?)username=/.test(window.location.search)) {
@@ -21,11 +23,27 @@
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="init.js"></script>
   </head>
   <body>
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <div id="roomCont">
+        <div id="roomTitle">Room:</div>
+        <select id="roomSelect">
+          <option value="lobby">lobby</option>
+          <option value="lobby">lobby</option>
+          <option value="lobby">lobby</option>
+        </select>
+      </div>
+      <br/>
+      <input type="text" name="msg" id="messageInput">
+      <button class="submit" id="writeMessage">Submit</button>
+      <br/>
+      <input type="text" name="roomName">
+      <button class="submit" id="makeRoom">Submit</button>
+      </div>
     </div>
     <div id="chats"></div>
   </body>

@@ -24,6 +24,7 @@
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
     <script src="init.js"></script>
+    <script src="scripts/escape.js"></script>
   </head>
   <body>
     <div id="main">
@@ -33,18 +34,23 @@
         <div id="roomTitle">Room:</div>
         <select id="roomSelect">
           <option value="lobby">lobby</option>
-          <option value="lobby">lobby</option>
-          <option value="lobby">lobby</option>
+          <option value="peter's pad">peter's pad</option>
+          <option value="justin">justin</option>
         </select>
       </div>
       <br/>
       <input type="text" name="msg" id="messageInput">
       <button class="submit" id="writeMessage">Submit</button>
       <br/>
-      <input type="text" name="roomName">
+      <input type="text" name="roomName" id="roomName">
       <button class="submit" id="makeRoom">Submit</button>
       </div>
     </div>
     <div id="chats"></div>
+    <script>
+      $(function() {
+        app.init();
+      });
+    </script>
   </body>
 </html>

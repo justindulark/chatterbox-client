@@ -88,3 +88,11 @@ form input[type=text] {
     background-color: #0090da;
 }
 
+#roomTitle {
+    float: left;
+    padding-right: 10px;
+}
+
+#roomSelect {
+    float: left;
+}
